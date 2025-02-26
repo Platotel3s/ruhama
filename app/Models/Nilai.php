@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Nilai extends Model
+{
+    protected $table='nilais';
+    protected $fillable=[
+        'id_siswa',
+        'id_mapel',
+        'nominal',
+    ];
+    public function mapel(){
+        return $this->belongsTo(Mapel::class,'id');
+    }
+    public function siswa(){
+        return $this->belongsTo(Siswa::class,'id');
+    }
+}

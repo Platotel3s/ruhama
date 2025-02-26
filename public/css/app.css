@@ -1,0 +1,41 @@
+body{
+    background-color: #fffcdc;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.main-container{
+    height: 100vh;
+    width: 8rem;
+    border: 1px solid black;
+    background-color: #14281D;
+    color: #fffcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.navbar-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo a img{
+    height: 6rem;
+    width: 6rem;
+}
